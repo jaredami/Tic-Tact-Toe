@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="tictactoe-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade" rel="stylesheet">
+    
+</head>
+    
+<body>
+  <div id="overlay">
+    <div id="overlayText">Overlay</div>
+    <button id="playAgainButton">Play Again</button>
+  </div>
+
+  <div id="gameBoard" class="container">
+    <div id="scoreBoardContainer">
+      <div class="row scoreBoard">
+        <h1 id="playerScore" class="col-6 player">0</h1>
+        <h1 id="pcScore" class="col-6 computer">0</h1>
+      </div>
+      <div class="row scoreBoard">
+        <h1 id="pl" class="col-6 player">PL</h1>
+        <h1 id="pc" class="col-6 computer">PC</h1>
+      </div>
+    </div>
+
+    <div class="boardRow row">
+      <div class="boardSquare col-4">
+        <button id="top1" class="squareButton"></button>
+      </div>
+      <div class="boardSquare col-4">
+        <button id="top2" class="squareButton"></button>
+      </div>
+      <div class="boardSquare col-4">
+        <button id="top3" class="squareButton"></button>
+      </div>
+    </div>
+    <div class="boardRow row">
+      <div class="boardSquare col-4">
+        <button id="mid1" class="squareButton"></button>
+      </div>
+      <div class="boardSquare col-4">
+        <button id="mid2" class="squareButton"></button>
+      </div>
+      <div class="boardSquare col-4">
+        <button id="mid3" class="squareButton"></button>
+      </div>
+    </div>
+    <div class="boardRow row">
+      <div class="boardSquare col-4">
+        <button id="bott1" class="squareButton"></button>
+      </div>
+      <div class="boardSquare col-4">
+        <button id="bott2" class="squareButton"></button>
+      </div>
+      <div class="boardSquare col-4">
+        <button id="bott3" class="squareButton"></button>
+      </div>
+    </div>
+
+    <div>
+      <div id="chooseContainer">
+        <div id="choose">Choose:</div>
+        <button id="chooseObutton" class="chooseButton">O</button>
+        <button id="chooseXbutton" class="chooseButton">X</button>
+        <button id="resetButton">Reset</button>
+      </div>
+
+    </div>
+
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="tictactoe-script.js"></script>
+</body>
+</html>
